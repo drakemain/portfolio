@@ -1,6 +1,6 @@
 console.log('Hello world');
 
-fetch('/api/')
+fetch('/api/hello')
     .then(res => {
           if (!res.ok) {
               throw new Error('Bad response');

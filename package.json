@@ -7,7 +7,7 @@
     "build": "npm run build-client && tsc",
     "dev": "npm run build && nodemon -r source-map-support/register dist/index.js",
     "start": "npm run build && node -r source-map-support/register dist/index.js",
-    "build-client": "mkdir -p dist/static/ && cd ./src/static/ && cp -r ./html/ ../../dist/static/ && cp -r ./css/ ../../dist/static/ && tsc",
+    "build-client": "mkdir -p dist/static/ && cd ./src/static/ && cp -r ./html/* ../../dist/static/ && cp -r ./css/* ../../dist/static/ && tsc",
     "clean": "rm -r dist"
   },
   "keywords": [],

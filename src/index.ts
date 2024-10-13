@@ -1,6 +1,8 @@
-import express, {Request, Response} from 'express';
+import express/*, {Request, Response}*/ from 'express';
 import dotenv from 'dotenv';
 import path from 'path';
+
+import apiRouter from './routes/router';
 
 dotenv.config();
 
@@ -10,15 +12,12 @@ const staticPath = path.join(__dirname, 'static');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/static', express.static(staticPath));
+app.use('/', express.static(staticPath));
+app.use('/api', apiRouter);
 
-app.get('/', (_req: Request, res: Response) => {
-    res.sendFile(path.join(staticPath, 'html', 'index.html'));
-});
-
-app.get('/api/', (_req: Request, res: Response) => {
-    res.send({payload: 'Test'});
-});
+// app.get('/', (_req: Request, res: Response) => {
+//     res.sendFile(path.join(staticPath, 'html', 'index.html'));
+// });
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
