@@ -15,10 +15,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/', express.static(staticPath));
 app.use('/api', apiRouter);
 
-// app.get('/', (_req: Request, res: Response) => {
-//     res.sendFile(path.join(staticPath, 'html', 'index.html'));
-// });
-
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
