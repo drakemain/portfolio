@@ -1,4 +1,5 @@
 import { MongoClient, Db, ServerApiVersion } from 'mongodb';
+import { About, Project, Work } from './common';
 
 const ABOUT_COLLECTION_NAME: string = 'about';
 const PROJECTS_COLLECTION_NAME: string = 'projects';
@@ -11,7 +12,8 @@ class DatabaseInterface {
     private db: Db | null;
 
 
-    constructor(user: string, password: string) {
+    constructor(user: string|undefined, password: string|undefined) {
+        console.log(user, password);
         this.uri = `mongodb+srv://${user}:${password}@cluster0.9zaux.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
         this.client = new MongoClient(this.uri, {
             serverApi: {
@@ -129,25 +131,6 @@ class DatabaseInterface {
         const cursor = collection?.find();
         return cursor.toArray();
     }
-}
-
-interface About {
-    content: string;
-}
-
-interface Project {
-    name: string;
-    description: string;
-    id: string;
-}
-
-interface Work {
-    id: string;
-    company: string;
-    title: string;
-    startDate: Date;
-    endDate: Date;
-    description: string;
 }
 
 export default DatabaseInterface;
