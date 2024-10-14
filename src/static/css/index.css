@@ -49,6 +49,8 @@ body {
     animation: Gradient 30s ease infinite;
     color: #e0e0e0;
     line-height: 1.6;
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes Gradient {
@@ -117,10 +119,10 @@ header {
                 font-weight: 600;
             }
 
-            /* &:not(:last-child)::after { */
-            /*     content: '|'; */
-            /*     color: #67e6dc; */
-            /* } */
+            &::after, &::before {
+                content: '|';
+                color: rgba(0.1, 0, 0.2, 0.75);
+            }
         }
     }
 
