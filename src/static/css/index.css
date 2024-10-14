@@ -156,3 +156,21 @@ main section {
     /*     box-shadow: 0 5px 25px rgba(8, 68, 129, 0.5); */
     /* } */
 }
+
+.highlight {
+    background: rgba(103, 230, 220, 0.3);
+    color: #ffffff;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(103, 230, 220, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for an interactive feel */
+.highlight:hover {
+    background: rgba(103, 230, 220, 0.5);
+    box-shadow: 0 0 15px rgba(103, 230, 220, 0.7), inset 0 0 7px rgba(255, 255, 255, 0.2);
+    /* cursor: pointer; */
+}
