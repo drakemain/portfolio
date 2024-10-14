@@ -12,13 +12,11 @@ h1 {
     font-size: 2.8em;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    /* color: #3498db; */
 }
 
 h2 {
     font-size: 2em;
     margin: 20px 0 10px;
-    /* color: #40C0B5; */
 
     &:after {
         content: '';
@@ -31,19 +29,12 @@ h2 {
 }
 
 p {
-    /* font-size: 16px; */
-    /* line-height: 1.6; /* Enhances readability */ */
-    margin-bottom: 10px; /* Space between paragraphs */
-    padding: 15px;
-    text-align: justify; /* Justify text for a cleaner look, though this can be controversial */
-    /* color: #4a4a4a; */
     border-left: 4px solid rgba(130, 204, 221, 0.5);
     border-radius: 10px;
 }
 
 body {
     font-family: 'Frutiger Next Pro', 'Frutiger', 'Avenir Next', 'Roboto', Arial, sans-serif;
-    /* background: linear-gradient(to right, #1a1a1a, #66A6FF); */
     background: linear-gradient(140deg, #040024, #150051, #03001e);
     background-size: 600% 600%;
     animation: Gradient 30s ease infinite;
@@ -66,7 +57,7 @@ body {
 }
 
 main {
-    /* border-radius: 15px; */
+
 }
 
 #root-container {
@@ -89,7 +80,6 @@ header {
     padding: 30px 0;
     position: relative;
     text-align: center;
-    /* border-radius: 0 0 85% 85% / 30%; */
 }
 
 #location {
@@ -150,11 +140,6 @@ main section {
     margin: 12px 3px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 0 50px rgba(103, 230, 220, 0.1);
     transition: all 0.3s ease;
-
-    /* &:hover { */
-    /*     background: rgba(255, 255, 255, 0.8); */
-    /*     box-shadow: 0 5px 25px rgba(8, 68, 129, 0.5); */
-    /* } */
 }
 
 .highlight {
@@ -168,9 +153,7 @@ main section {
     transition: all 0.3s ease;
 }
 
-/* Hover effect for an interactive feel */
 .highlight:hover {
     background: rgba(103, 230, 220, 0.5);
     box-shadow: 0 0 15px rgba(103, 230, 220, 0.7), inset 0 0 7px rgba(255, 255, 255, 0.2);
-    /* cursor: pointer; */
 }
