@@ -52,7 +52,8 @@ body {
     color: #e0e0e0;
     line-height: 1.6;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    height: 100vh;
 }
 
 @keyframes Gradient {
@@ -83,7 +84,7 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 5%;
+    margin: 0 auto;
 
     & > * {
         background: rgba(10, 10, 30, 0.25);
@@ -95,24 +96,16 @@ main {
 
 header {
     padding: 30px 0;
-    position: relative;
     text-align: center;
 }
 
 #location {
-    /* position: absolute; */
-    display: inline-block;
     padding: 0;
     margin: 0;
     font-size: 20px;
-    /* left: 15%; */
-    /* top: 55%; */
 }
 
 #external-links {
-    postion: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 100;
 
@@ -193,12 +186,10 @@ main section {
     }
 
     #external-links a {
-        /* display: block; */
-        /* margin: 10px 0; */
+
     }
 
-    /* Stack navigation or other elements if needed */
     #external-links {
-        /* flex-direction: column; */
+
     }
 }
