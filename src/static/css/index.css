@@ -47,7 +47,7 @@ p {
 body {
     font-family: 'Frutiger Next Pro', 'Frutiger', 'Avenir Next', 'Roboto', Arial, sans-serif;
     background: linear-gradient(140deg, #040024, #150051, #03001e);
-    background-size: 600% 600%;
+    background-size: 300% 500%;
     animation: Gradient 30s ease infinite;
     color: #e0e0e0;
     line-height: 1.6;
@@ -66,7 +66,7 @@ body {
         background-position: 50% 0%;
     }
     75% {
-        background-position: 90% 90%;
+        background-position: 90% 0%;
     }
     100% {
         background-position: 0% 50%;
