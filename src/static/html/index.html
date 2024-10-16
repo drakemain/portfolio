@@ -41,14 +41,105 @@
                 <!-- <p>Driven by a passion for space exploration, my career objective is to contribute to humanity's quest to become a space-faring civilization. I am committed to leveraging my skills in software development, system integration, and my generalist approach to problem-solving to advance technologies that will one day propel us beyond Earth.</p> -->
             </section>
 
-            <section id="projects">
+            <section id="projects" hidden>
                 <h3>Personal Projects</h3>
                 <p>This is where I will showcase some of my personal projects.</p>
             </section>
 
             <section id="history">
                 <h3>Work History</h3>
-                <p>This is where I will have my employment history.</p>
+                <article class="work-history-entry">
+                    <header class="work-history-header">
+                        <h4 class="company-name">Amazon Kuiper</h4>
+                        <span class="job-title">Software Development Engineer</span>
+                        <span class="job-location">Redmond, WA</span>
+                    </header>
+                    <div class="work-dates">
+                        <time datetime="YYYY-MM">02/2022</time>
+                        <time datetime="YYYY-MM">12/2023</time>
+                    </div>
+                    <div class="role-description">
+                        <p>As a Software Development Engineer at Amazon Kuiper on the GNC team, I spearheaded the evolution of our propulsion software. I helped transform a basic framework into a comprehensive system that managed thruster operations in space, ensuring precise satellite orbit adjustments.</p>
+                        <ul>
+                            <li>Developed and refined the propulsion control algorithms in Rust, ensuring high reliability and fault tolerance in vacuum and high-radiation environments.</li>
+                            <li>Collaborated closely with electronics engineers to integrate software with propulsion hardware, performing tests on real hardware in propulsion lab vacuum chamber.</li>
+                            <li>Utilized tools like oscilloscopes and logic analyzers for diagnostics, directly contributing to finding and squashing bugs, both in the software and the hardware.</li>
+                            <li>All contributions directly palyed a pivotal role in our first protoflight mission, successfully performing orbit adjustments of two test satellites and thus demonstrating the system's effectiveness.</li>
+                        </ul>
+                    </div>
+                    <div class="skills-used">
+                        <span>Rust</span><span>C++</span><span>Linux</span><span>Python</span>
+                    </div>
+                </article>
+                <article class="work-history-entry">
+                    <header class="work-history-header">
+                        <h4 class="company-name">AWS CloudWatch Logs</h4>
+                        <span class="job-title">Software Development Engineer</span>
+                        <span class="job-location">Seattle, WA</span>
+                    </header>
+                    <div class="work-dates">
+                        <time datetime="YYYY-MM">06/2021</time>
+                        <time datetime="YYYY-MM">02/2022</time>
+                    </div>
+                    <div class="role-description">
+                        <p>On the 'front end' team at AWS CloudWatch Logs, I managed the ingestion pipeline for customer data, dealing with high-volume data processing. My role was critical in maintaining the security, reliability, and smooth operation across multiple global regions during deployments.</p>
+                        <ul>
+                            <li>Implemented and rapidly deployed security patches, including a significant fix for a confused deputy vulnerability, enhancing overall system security.</li>
+                            <li>Engineered and rolled out updates to mitigate major security issues in our logging framework, ensuring data integrity and protection.</li>
+                            <li>Developed comprehensive testing suites to bolster system reliability, reducing downtime and errors in data ingestion processes.</li>
+                            <li>Facilitated cross-team collaboration to ensure service interoperability during updates, maintaining seamless integration and operation continuity.</li>
+                        </ul>
+                    </div>
+                    <div class="skills-used">
+                        <span>Java</span><span>Linux</span><span>Python</span>
+                    </div>
+                </article>
+                <article class="work-history-entry">
+                    <header class="work-history-header">
+                        <h4 class="company-name">Digital Control, Inc.</h4>
+                        <span class="job-title">Embedded Software Engineer</span>
+                        <span class="job-location">Kent, WA</span>
+                    </header>
+                    <div class="work-dates">
+                        <time datetime="YYYY-MM">02/2020</time>
+                        <time datetime="YYYY-MM">06/2021</time>
+                    </div>
+                    <div class="role-description">
+                        <p>At Digital Control, Inc., I was instrumental in creating embedded software for a cutting-edge handheld device used in horizontal directional drilling. My work focused on enhancing user interaction through advanced visualization techniques and real-time data streaming.</p>
+                        <ul>
+                            <li>Upgraded the application framework to a newer Qt version, integrating WebGL to enable UI streaming directly to web interfaces for easier development and testing, with potential customer uses as well.</li>
+                            <li>Developed core functionalities in C++ within the embedded system, working closely with a principal scientist to implement complex matrix algebra for magnetic field to screen coordinate transformations.</li>
+                            <li>Created a dynamic graphical UI utilizing TypeScript, which, combined with Webdis, allowed for real-time visualization of tracker orientation by streaming Redis data to web browsers.</li>
+                            <li>Enhanced system capabilities by facilitating live data interaction, significantly speeding up the development and debugging process for field operations.</li>
+                        </ul>
+                    </div>
+                    <div class="skills-used">
+                        <span>C++</span><span>TypeScript</span><span>Go</span><span>Linux</span>
+                    </div>
+                </article>
+                <article class="work-history-entry">
+                    <header class="work-history-header">
+                        <h4 class="company-name">HeliTrak, Inc.</h4>
+                        <span class="job-title">Software Engineer Intern</span>
+                        <span class="job-location">Gig Harbor, WA</span>
+                    </header>
+                    <div class="work-dates">
+                        <time datetime="YYYY-MM">04/2019</time>
+                        <time datetime="YYYY-MM">01/2020</time>
+                    </div>
+                    <div class="role-description">
+                        <div class="role-description">
+                            <p>During my tenure at HeliTrak, Inc., a very small but innovative company, I contributed to an autopilot system for the Robinson R-44 helicopter. My role expanded from an intern to a key team member, reflecting my significant contributions to both software development and system integration.</p>
+                            <ul>
+                                <li>Developed and implemented hardware drivers in C, meticulously aligning with technical specifications to ensure seamless integration with the autopilot system.</li>
+                                <li>Created a suite of developer tools, highlighted by a real-time telemetry dashboard using JavaScript for the frontend and Rust for a WASM module, enhancing live data visualization from the CAN bus via a Raspberry Pi web server.</li>
+                                <li>Successfully ported critical development tools from Windows to Linux, increasing the team's flexibility and productivity.</li>
+                            </ul>
+                        </div>
+                    <div class="skills-used">
+                        <span>C</span><span>Linux</span><span>JavaScript</span><span>Rust</span>
+                    </div>
+                </article>
             </section>
 
             <section id="contact">

@@ -40,8 +40,10 @@ h3:after {
 }
 
 p {
-    border-left: 4px solid rgba(130, 204, 221, 0.5);
-    border-radius: 10px;
+    border-left: 4px solid rgba(130, 204, 221, 0.2);
+    border-right: 4px solid rgba(130, 204, 221, 0.2);
+    border-radius: 15px;
+    padding: 0 2px;
 }
 
 body {
@@ -224,6 +226,52 @@ button:active {
 .highlight:hover {
     background: rgba(103, 230, 220, 0.5);
     box-shadow: 0 0 15px rgba(103, 230, 220, 0.7), inset 0 0 7px rgba(255, 255, 255, 0.2);
+}
+
+.work-history-entry {
+    border-right: 1px solid rgba(103, 204, 221, 0.5);
+    border-left: 1px solid rgba(103, 204, 221, 0.5);
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-shadow: none;
+}
+
+.work-history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.company-name {
+    margin: 0;
+    color: #00A8E8;
+}
+
+.job-title {
+    margin: 0;
+    font-style: italic;
+    color: #8A8A8E;
+}
+
+.work-dates {
+    font-size: 0.9em;
+    color: #B0B0B0;
+}
+
+.role-description {
+    & ul {
+        padding-left: 30px;
+    }
+}
+
+.skills-used {
+    font-size: 0.9em;
+    color: #B0B0B0;
+
+    & span {
+        margin-right: 6px;
+    }
 }
 
 @media (max-width: 768px) {
