@@ -13,7 +13,6 @@ class DatabaseInterface {
 
 
     constructor(user: string|undefined, password: string|undefined) {
-        console.log(user, password);
         this.uri = `mongodb+srv://${user}:${password}@cluster0.9zaux.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
         this.client = new MongoClient(this.uri, {
             serverApi: {
@@ -27,7 +26,6 @@ class DatabaseInterface {
 
     public async connect() {
         try {
-            console.log(this.uri);
             await this.client.connect();
             this.db = this.client.db(CONTENT_DB_NAME);
         } catch(e) {
@@ -71,12 +69,10 @@ class DatabaseInterface {
             throw new Error('DB not connected');
         }
         const collection = this.db.collection<Project>(PROJECTS_COLLECTION_NAME);
-        const result = await collection?.updateOne(
+        await collection?.updateOne(
             {id: project.id},
             {$set: project},
         );
-
-        console.log(result);
     }
 
     public async deleteProject(id: string) {

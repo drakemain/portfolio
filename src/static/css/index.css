@@ -53,7 +53,7 @@ body {
     line-height: 1.6;
     display: flex;
     /* justify-content: center; */
-    height: 100vh;
+    min-height: 100vh;
 }
 
 @keyframes Gradient {
@@ -158,6 +158,56 @@ main section {
             width: 100%;
         }
     }
+}
+
+form {
+    & label {
+        display: inline-block;
+        width: 100px;
+        color: #67e6dc;
+    }
+
+    & input, & textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #150051;
+        background-color: rgba(255, 255, 255, 0.05);
+        box-sizing: border-box;
+        border-radius: 4px;
+        color: #e0e0e0;
+        /* transition: background-color 0.3s, box-shadow 0.3s; */
+    }
+
+    & textarea {
+        height: 380px;
+    }
+
+    & input:hover, & textarea:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 5px #67e6dc;
+        outline: none;
+    }
+}
+
+button {
+    background: #3498db;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s;
+    box-shadow: 0 3px #2980b9;
+}
+
+button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px #2472a4;
+}
+
+button:active {
+    transform: translateY(5px);
+    box-shadow: none;
 }
 
 .highlight {

@@ -1,11 +1,27 @@
-console.log('Hello world');
+document.getElementById('contact-form')?.addEventListener('submit', function(e: SubmitEvent) {
+    e.preventDefault();
 
-fetch('/api/hello')
-    .then(res => {
-          if (!res.ok) {
-              throw new Error('Bad response');
-          }
+    const self = this as HTMLFormElement;
+    const form = new FormData(self);
+    const formObj: any = {};
 
-          return res.json();
+    form.forEach((v, k) => {
+        formObj[k] = v;
+    });
+    const urlEncoded = new URLSearchParams(formObj);
+
+    fetch(self.action, {
+        method: self.method,
+        body: urlEncoded,
     })
-    .then(console.log);
+    .then(res => {
+        if (!res.ok) {
+            throw new Error('Invalid submission.');
+        }
+
+        self.reset();
+    })
+    .catch(e => {
+        console.error(e);
+    });
+});
